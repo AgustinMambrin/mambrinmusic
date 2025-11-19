@@ -1,13 +1,3 @@
-// Configuration object
-const defaultConfig = {
-    phone_number: "+1234567890",
-    background_color: "#000000",
-    surface_color: "#ffffff",
-    text_color: "#1f2937",
-    font_family: "Inter",
-    font_size: 16
-};
-
 // Navbar scroll animation
 let lastScrollY = 0;
 const navbar = document.getElementById('navbar');
