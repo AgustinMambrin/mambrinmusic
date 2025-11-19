@@ -185,8 +185,10 @@ body {
 
 .text-filled-black {
     color: black;
-    -webkit-text-stroke: 2px white;
-    font-family: fantasy;
+    -webkit-text-stroke: 3px white;
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @view-transition {
