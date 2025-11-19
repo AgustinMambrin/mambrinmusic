@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///C:/Users/Agustin%20Mambrin/OneDrive/Escritorio/MM%20v2/index.html -->
+<html lang="es" class="h-full">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mambrin Music - Servicio de DJ Profesional</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="logo" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+
+<body class="h-full font-sans bg-black text-white overflow-x-hidden" style="overflow: auto">
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar fixed w-full top-0 z-50 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo (Center) -->
+      <div class="absolute left-1/2 transform -translate-x-1/2">
+        <img src="assets/img/logo.png" id="logo-large"
+          class="logo-large h-16 w-16 flex items-center justify-center text-2x1" />
+      </div>
+      <!-- Brand Text (Center, hidden initially) -->
+      <div id="brand-text" class="brand-text left-1/2 transform -translate-x-1/2">
+        <span id="business-name-full" class="font-bold text-xl text-right">MAMBRIN MUSIC</span>
+      </div>
+      <!-- Menu Button (Right) -->
+      <button id="menu-btn" class="menu-btn relative w-12 h-12 flex items-center justify-center">
+        <div class="play-icon absolute">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </div>
+        <div class="pause-icon absolute">
+          <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4 6h16v4H4V6zm0 8h16v4H4v-4z"></path>
+          </svg>
+        </div>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu"
+    class="mobile-menu fixed top-0 right-0 w-full h-full bg-black z-40 flex flex-col items-center justify-between">
+    <div class="main-content">
+      <ol class="text-3xl main-nav">
+        <li><a href="/" class="nav-link uppercase"></span>Inicio</a></li>
+        <li><a class="nav-link uppercase" href="/index.html#paquetes"></span>Paquetes<span class="description"></span></a></li>
+        <li><a class="nav-link uppercase" href="/index.html#musica"></span>Música</a></li>
+        <li><a href="/index.html#acerca" class="nav-link uppercase whitespace-nowrap" rel="noopener noreferrer"></span>Acerca de</a></li>
+        <li><a class="nav-link uppercase" href="/index.html#contacto"></span>Contacto<span class="description body-layer1-600"></span></a></li>
+        <li><a href="/fyq.html" class="nav-link uppercase whitespace-nowrap" rel="noopener noreferrer"></span>Preguntas Frecuentes</a></li>
+      </ol>
+
+      <div id="boton-whatsapp" class="flex justify-center items-center">
+        <button id="whatsapp-menu-btn"
+          class="bg-green-500 hover:bg-green-600 transition-all duration-300 hover:transform hover:scale-105 text-white px-8 py-4 rounded-full text-lg font-medium flex items-center space-x-3 mx-auto">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488">
+            </path>
+          </svg><span>Reservar</span>
+        </button>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <div class="social">
+        <a href="https://www.instagram.com/mambrinmusic" rel="noopener noreferrer" target="_blank" class="social-a">
+          <span class="social-a-span" tabindex="-1">instagram</span>
+        </a>
+        <a href="https://www.youtube.com/@mambrindj" rel="noopener noreferrer" target="_blank" class="social-a">
+          <span class="social-a-span" tabindex="-1">youtube</span>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61557929386818" rel="noopener noreferrer" target="_blank" class="social-a">
+          <span class="social-a-span" tabindex="-1">facebook</span></a>
+        </a>
+        <a href="https://www.tiktok.com/@mambrin.dj" rel="noopener noreferrer" target="_blank" class="social-a">
+          <span class="social-a-span" tabindex="-1">tiktok</span></a>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section id="inicio" class="relative h-full parallax-bg flex items-center justify-center">
+    <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+    <div class="fade-in relative z-10 text-center px-6 parallax-element" style="transform: translateY(-54.06px)">
+      <h1 id="hero-title" class="hero-title text-6xl md:text-8xl font-bold mb-6 leading-tight">
+        MAMBRIN<br />MUSIC<br />
+      </h1>
+      <p id="hero-subtitle" class="text-xl md:text-2xl font-500 mb-12 max-w-2xl mx-auto opacity-90 text-contrast">
+        Creamos momentos inolvidables con la música perfecta
+      </p>
+      <button
+        class="bg-gradient-to-r from-pink-500 to-cyan-400 hover:from-pink-600 hover:to-cyan-500 text-white px-12 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl">
+        Descubrir Más
+      </button>
+    </div>
+    <!-- Scroll Arrow -->
+    <div class="absolute bottom-8 transform animate-bounce">
+      <p class="">Deslizá hacia abajo</p>
+
+      <svg class="w-6 h-6 text-white opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        style="position: absolute; right: 3rem; left: 3.5rem">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </section>
+  <!-- Packs Section -->
+  <section id="paquetes" class="py-32 bg-white text-black relative">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="fade-in text-center mb-20">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6 parallax-element" style="transform: translateY(-56.763px)">
+          Paquetes
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto parallax-element" style="transform: translateY(-59.466px)">
+          Ofrecemos experiencias musicales personalizadas para cada tipo de evento.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="fade-in card-hover bg-white p-8 rounded-3xl text-center shadow-xl border border-gray-100 visible">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-gray-800">Pack DJ</h3>
+          <p class="text-gray-600 mb-6">
+            DJ en vivo adaptado a tu evento con una gran colección de musica
+          </p>
+        
+          <button onclick="openModal('basic')" class="w-full bg-gradient-to-r from-cyan-400 to-blue-500 text-white py-4 rounded-full font-bold hover:shadow-xl">
+            Más Info
+          </button>
+        </div>
+        <div
+          class="fade-in card-hover bg-gradient-to-br from-pink-500 to-orange-400 p-8 rounded-3xl text-center text-white transform scale-105 shadow-2xl visible flex"
+          style="flex-direction: column; align-items: center">
+          <div class="w-24 h-6 bg-white rounded-full align-center mb-4" style="width: 165px">
+            <span class="font-bold bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent p-8">Más
+              Popular</span>
+          </div>
+          <div
+            class="w-16 h-16 bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Pack Premium</h3>
+          <p class="text-white text-opacity-90 mb-6">
+            Los mejores equipos profesionales. <br>DJ con sonido inluido
+          </p>
+          
+          <button onclick="openModal('premium')"
+            class="bg-gray  text-white w-full py-4 rounded-full text-lg font-medium transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl">
+            Más Info
+          </button>
+        </div>
+        <div class="fade-in card-hover bg-white p-8 rounded-3xl text-center shadow-xl border border-gray-100 visible">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-orange-400 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4 text-gray-800">Pack VIP</h3>
+          <p class="text-gray-600 mb-6">
+            Servicio completo para tu evento. Sonido potente, iluminación LED, lasers , humo y más.
+          </p>
+        
+          <button onclick="openModal('vip')" class="w-full bg-gradient-to-br from-orange-400 to-pink-500 text-white py-4 rounded-full font-bold hover:shadow-xl">
+            Más Info
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Music Section -->
+  <section id="musica" class="mb-8 bg-black relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-20 left-10 w-64 h-64 bg-blue-600 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative z-10">
+      <div class="fade-in text-center mb-12 ">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6 mt-20 parallax-element" style="transform: translateY(-62.169px)">
+          Géneros Musicales
+        </h2>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto parallax-element px-6"
+          style="transform: translateY(-64.872px)">
+          Desde los ritmos más tradicionales hasta las tendencias más
+          actuales, manejamos una amplia variedad de géneros musicales para
+          adaptarnos perfectamente a tu evento y crear la atmósfera ideal.
+        </p>
+      </div>
+      <!-- Container all Lines -->
+      <div class="space-x-4 overflow-hidden">
+        <!-- Line 1 - Moving Left -->
+        <div class="animate-scroll-rows">
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CACHENGUE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              REGGAETON VIEJO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              RKT•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CACHENGUE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              REGGAETON VIEJO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              RKT•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CACHENGUE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              REGGAETON VIEJO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              RKT•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CACHENGUE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              REGGAETON VIEJO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              RKT•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CACHENGUE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              REGGAETON VIEJO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              RKT•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CACHENGUE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              REGGAETON VIEJO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              RKT•
+            </span>
+          </div>
+        </div>
+        <!-- Line 2 - Moving Right -->
+        <div class="animate-scroll-rows">
+          <div class="animate-scroll-row-1 whitespace-nowrap reverse">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUMBIA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUARTETO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              SANTAFESINO•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap reverse">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUMBIA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUARTETO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              SANTAFESINO•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap reverse">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUMBIA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUARTETO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              SANTAFESINO•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap reverse">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUMBIA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUARTETO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              SANTAFESINO•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap reverse">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUMBIA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUARTETO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              SANTAFESINO•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap reverse">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUMBIA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              CUARTETO•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              SANTAFESINO•
+            </span>
+          </div>
+        </div>
+        <!-- Line 3 - Moving Left -->
+        <div class="animate-scroll-rows">
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              GUARACHA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECH HOUSE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECHNO•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              GUARACHA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECH HOUSE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECHNO•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              GUARACHA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECH HOUSE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECHNO•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              GUARACHA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECH HOUSE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECHNO•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              GUARACHA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECH HOUSE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECHNO•
+            </span>
+          </div>
+          <div class="animate-scroll-row-1 whitespace-nowrap">
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              GUARACHA•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECH HOUSE•
+            </span>
+            <span class="scrolling-text text-6xl md:text-8xl font-black text-filled-black tracking-wider">
+              TECHNO•
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Central button -->
+  <button class="block mx-auto">
+    <a href="https://www.youtube.com/@mambrindj" class="flex justify-center text-center relative top-30 " target="_blank">
+      <span class="flex items-center bg-white text-black border font-medium py-4 px-8 uppercase border-2 hover:shadow-xl">dale play
+        <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+      </span>
+    </a>
+  </button>
+   
+  <!-- About Section -->
+  <section id="acerca" class="py-32 md:py-12 bg-white text-black">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="fade-in">
+        <h2 class="text-5xl md:text-6xl font-bold mb-8 mt-20 parallax-element" style="transform: translateY(-67.575px)">
+          Nosotros
+        </h2>
+        <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto parallax-element"
+          style="transform: translateY(-70.278px)">
+          Comenzamos en el año 2010 realizando nuestro servicio de
+          Dj con sonido e iluminación profesional en todo tipo de eventos,
+          desde <em>cumpleaños, casamientos, egresados, pool partys, afters, fiestas privadas y más.</em>
+          Actualmente contamos con más de una década creando experiencias
+          musicales únicas, con el profesionalismo de siempre. <br />Tenemos
+          distintos paquetes según sus necesidades, click en
+          <a href="index.html#paquetes" class="font-bold uppercase bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">paquetes </a>para
+          más info.
+          <br>
+          Tambien podés conocer <a href="fyq.html" class="font-bold uppercase bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent">nuestro equipamento</a>.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="fade-in text-center visible">
+          <div class="text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">
+            120+
+          </div>
+          <p class="text-gray-600 text-lg">Eventos Realizados</p>
+        </div>
+        <div class="fade-in text-center visible">
+          <div
+            class="text-5xl font-bold bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent mb-4">
+            15+
+          </div>
+          <p class="text-gray-600 text-lg">Años de Experiencia</p>
+        </div>
+        <div class="fade-in text-center visible">
+          <div
+            class="text-5xl font-bold bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent mb-4">
+            100%
+          </div>
+          <p class="text-gray-600 text-lg">Satisfacción Garantizada</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contacto" class="p-8 bg-black relative">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="fade-in">
+        <h2 class="text-5xl md:text-6xl font-bold mt-20 mb-8 pt-8 md:pt-8 parallax-element"
+          style="transform: translateY(-72.981px)">
+          Contacto
+        </h2>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto parallax-element" style="transform: translateY(-75.684px)">
+          ¿Tenés alguna duda? 
+          <br>
+          Podes ver las <a href="/fyq.html" class="font-bold uppercase hover:text-blue-400">Preguntas Frecuentes</a> acá.
+          <br />
+          Comunicate ahora y hagamos de tu celebración un evento inolvidable.
+        </p>
+        <button id="whatsapp-btn"
+          class="bg-green-500 hover:bg-green-600 text-white px-12 py-6 rounded-full text-xl font-medium transition-all duration-300 hover:transform hover:scale-105 flex items-center space-x-4 mx-auto mb-12">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488">
+            </path>
+          </svg><span>Reservar</span>
+        </button>
+        <div class="text-gray-400 space-y-2">
+          <p class="sm:text-medium">📧 mambrinmusic@gmail.com</p>
+          <p class="sm:text-medium">📍 La matanza, Buenos Aires</p>
+        </div>
+      </div>
+      <section class="">
+        <div class="">
+          <h3 class="py-4 font-bold">Seguinos</h3>
+        </div>
+        <ul class="flex flex-row justify-center" flex-row="" justify-center="" px-2="">
+          <li class="px-6 hover:transform hover:scale-105">
+            <a href="https://www.instagram.com/mambrinmusic" target="_blank" rel="noopener noreferrer" class="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 80 80" class="icon">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M55 6H25C14.5066 6 6 14.5066 6 25V55C6 65.4934 14.5066 74 25 74H55C65.4934 74 74 65.4934 74 55V25C74 14.5066 65.4934 6 55 6ZM25 0C11.1929 0 0 11.1929 0 25V55C0 68.8071 11.1929 80 25 80H55C68.8071 80 80 68.8071 80 55V25C80 11.1929 68.8071 0 55 0H25ZM40 52C46.6274 52 52 46.6274 52 40C52 33.3726 46.6274 28 40 28C33.3726 28 28 33.3726 28 40C28 46.6274 33.3726 52 40 52ZM40 58C49.9411 58 58 49.9411 58 40C58 30.0588 49.9411 22 40 22C30.0589 22 22 30.0588 22 40C22 49.9411 30.0589 58 40 58ZM59.5 21C61.9853 21 64 18.9853 64 16.5C64 14.0147 61.9853 12 59.5 12C57.0147 12 55 14.0147 55 16.5C55 18.9853 57.0147 21 59.5 21Z"
+                  fill="currentColor"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="px-6 hover:transform hover:scale-105">
+            <a href="https://www.youtube.com/@mambrindj" target="_blank" rel="noopener noreferrer" class="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 96 69" class="icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M95.0421 15.0455C95.0421 15.0455 94.1035 8.33957 91.2245 5.38559C87.5755 1.51037 83.4827 1.49199 81.6064 1.26493C68.1728 0.279907 48.0213 0.279907 48.0213 0.279907H47.9787C47.9787 0.279907 27.8283 0.279907 14.3936 1.26493C12.5173 1.49199 8.42667 1.51037 4.77547 5.38559C1.89653 8.33957 0.96 15.0455 0.96 15.0455C0.96 15.0455 0 22.9203 0 30.795V38.1789C0 46.0526 0.96 53.9274 0.96 53.9274C0.96 53.9274 1.89653 60.6333 4.77547 63.5873C8.42667 67.4636 13.2235 67.3393 15.36 67.7458C23.0411 68.493 48 68.7243 48 68.7243C48 68.7243 68.1728 68.693 81.6064 67.7091C83.4827 67.482 87.5755 67.4636 91.2245 63.5873C94.1035 60.6333 95.0421 53.9274 95.0421 53.9274C95.0421 53.9274 96 46.0526 96 38.1789V30.795C96 22.9203 95.0421 15.0455 95.0421 15.0455ZM38.0896 47.1241L38.0853 19.7825L64.0245 33.5003L38.0896 47.1241Z" fill="currentColor"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="px-6 hover:transform hover:scale-105">
+            <a href="https://www.facebook.com/profile.php?id=61557929386818" target="_blank" rel="noopener noreferrer" class="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 17 32" class="icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.329 5.31333H16.2504V0.225333C15.7464 0.156 14.013 0 11.9944 0C7.78236 0 4.89702 2.64933 4.89702 7.51867V12H0.249023V17.688H4.89702V32H10.5957V17.6893H15.0557L15.7637 12.0013H10.5944V8.08267C10.5957 6.43867 11.0384 5.31333 13.329 5.31333Z" fill="currentColor"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="px-6 hover:transform hover:scale-105">
+            <a href="https://www.tiktok.com/@mambrin.dj" target="_blank" rel="noopener noreferrer" class="text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 28 32" class="icon"><path d="M27.0459 7.02905C23.687 7.02905 20.9543 4.29639 20.9543 0.9375C20.9543 0.419678 20.5347 0 20.0168 0H14.9958C14.4783 0 14.0583 0.419678 14.0583 0.9375V21.5229C14.0583 23.4976 12.4517 25.104 10.4771 25.104C8.50244 25.104 6.896 23.4976 6.896 21.5229C6.896 19.5481 8.50244 17.9417 10.4771 17.9417C10.9949 17.9417 11.4146 17.522 11.4146 17.0042V11.9832C11.4146 11.4656 10.9949 11.0457 10.4771 11.0457C4.69995 11.0457 0 15.7458 0 21.5229C0 27.3 4.69995 32 10.4771 32C16.2542 32 20.9543 27.3 20.9543 21.5229V12.4109C22.8201 13.4058 24.8965 13.925 27.0459 13.925C27.5637 13.925 27.9834 13.5054 27.9834 12.9875V7.96655C27.9834 7.44897 27.5637 7.02905 27.0459 7.02905Z" fill="currentColor"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+  </section>
+  
+  <!-- Modal Section -->
+  <div id="service-modal" class="fixed fade-in inset-0 bg-black bg-opacity text-black z-50 flex items-center justify-center p-4  hidden">
+   <div class="w-96 h-42 bg-white md:max-w-4xl rounded-3xl overflow-scroll" id="modal-content">
+    <div class="p-8">
+      <!-- Modal Header -->
+     <div class="flex items-center justify-between mb-6">
+      <div class="flex items-center space-x-4">
+       <div id="modal-icon" class="w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-pink-500 to-orange-400"><svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                </svg></div>
+       <h3 id="modal-title" class="text-2xl whitespace-nowrap font-bold text-gray-800"></h3>
+      </div>
+      <button onclick="closeModal()" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors duration-200">
+       <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+       </svg>
+      </button>
+     </div>
+     <!-- Modal Description -->
+     <p id="modal-description" class="text-lg text-gray-600 mb-8 leading-relaxed">La opción más popular para bodas, cumpleaños de 15 y eventos corporativos. Incluye iluminación profesional, efectos especiales y animación para crear una experiencia inolvidable.</p>
+     <!-- Price Display -->
+     <div class="bg-gray rounded-2xl p-8 mb-8 text-center">
+      <div class="text-sm text-gray-500 mb-2">
+       Precio del Paquete
+      </div>
+      <div id="modal-price" class="text-5xl font-black text-gray-800 mb-2">$599</div>
+      <div class="text-sm text-gray-500">
+       *Precio base, puede variar según duración y ubicación
+      </div>
+     </div><!-- Features List -->
+     <div class="space-y-4 mb-8">
+      <h4 class="text-xl font-bold text-gray-800 mb-4 text-center">✨ Incluye:</h4>
+      <div id="modal-features" class="flex flex-col gap-1 space-y-3 grid md:grid-cols-3">
+                  <div class="flex items-center space-x-3 p-1 bg-gray rounded-xl">
+                    <div class="text-lg">🎵</div>
+                    <div class="text-gray-700 font-medium">Todo lo incluido en DJ Sets</div>
+                </div><div class="flex items-center space-x-3 p-1 bg-gray rounded-xl">
+                    <div class="text-lg">💡</div>
+                    <div class="text-gray-700 font-medium">Iluminación LED profesional</div>
+                </div><div class="flex items-center space-x-3 p-1 bg-gray rounded-xl">
+                    <div class="text-lg">🌟</div>
+                    <div class="text-gray-700 font-medium">Efectos de humo y burbujas</div>
+                </div><div class="flex items-center space-x-3 p-1 bg-gray rounded-xl">
+                    <div class="text-lg">🎤</div>
+                    <div class="text-gray-700 font-medium">Sistema de micrófono doble</div>
+                </div><div class="flex items-center space-x-3 p-1 bg-gray rounded-xl">
+                    <div class="text-lg">🕺</div>
+                    <div class="text-gray-700 font-medium">Animación y juegos interactivos</div>
+                </div><div class="flex items-center space-x-3 p-1 bg-gray rounded-xl">
+                    <div class="text-lg">📸</div>
+                    <div class="text-gray-700 font-medium">Cabina de fotos con props</div>
+                </div><div class="flex items-center space-x-3 p-1 bg-gray rounded-xl">
+                    <div class="text-lg">⏰</div>
+                    <div class="text-gray-700 font-medium">Servicio extendido a 6 horas</div>
+                </div><div class="flex items-center space-x-3 p-1 bg-gray rounded-xl">
+                    <div class="text-lg">🎊</div>
+                    <div class="text-gray-700 font-medium">Decoración lumínica personalizada</div>
+                </div><div class="flex items-center space-x-3 p-1 bg-gray rounded-xl">
+                    <div class="text-lg">🎯</div>
+                    <div class="text-gray-700 font-medium">MC profesional incluido</div>
+                </div></div>
+     </div
+     ><!-- Action Buttons -->
+     <div class="flex flex-col md:flex-row p-4 gap-1 justify-center"><button onclick="openWhatsApp()" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-full font-medium transition-all duration-300 hover:transform hover:scale-105 flex items-center justify-evenly">
+       <svg class="w-8 h-8 pr-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"></path>
+       </svg><span class="whitespace-nowrap">Consultar por WhatsApp</span> </button> <button onclick="closeModal()" class="flex-1 bg-gray text-gray-800 px-6 py-4 rounded-full font-medium transition-all duration-300"> Cerrar </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  
+  
+  <!-- Footer -->
+  <footer class="bg-black">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <div class="flex items-center justify-center">
+        <a href="index.html" class="flex items-center justify-center">
+          <img class="w-16 h-16 flex items-center justify-center" src="assets/img/logo.png" />
+          <span class="font-bold">Mambrin Music</span>
+        </a>
+      </div>
+      <p class="text-gray-400">
+        © 2025 Mambrin Music. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+</body>
+
+<script src="js/script.js"></script>
+<script src="/js/modal.js"></script>
+
+</html>
