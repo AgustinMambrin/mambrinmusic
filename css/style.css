@@ -73,7 +73,7 @@ body {
 }
 
 .parallax-bg {
-    background-image: url(../assets/img/background.svg);
+    background-image: url("../assets/img/background.svg");
     background-size: cover;
     background-position: center;
 
