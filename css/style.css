@@ -185,8 +185,8 @@ body {
 
 .text-filled-black {
     color: black;
-    -webkit-text-stroke: 3px white;
-    font-family: 'Arial Black', Arial, sans-serif;
+    -webkit-text-stroke: 2px white;
+    font-family: Arial, 'Arial Black';
 }
 
 @view-transition {
