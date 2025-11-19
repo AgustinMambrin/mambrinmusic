@@ -1,5 +1,5 @@
 :root{
-    --background: url(/assets/img/fondo.svg)
+    --background: url(assets/img/fondo.svg)
 }
 
 body {
@@ -300,9 +300,6 @@ body {
 }
 
 /* ! FyQ page Styles */
-
-
-
 .list-inside{
     list-style: inside;
 }
